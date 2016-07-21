@@ -1,4 +1,4 @@
-### if and switch
+### Conditions and Loops
 
 * if:
 
@@ -58,4 +58,45 @@ switch (true) {
 }
 
 console.log(discount); // 20
+```
+
+* for
+
+```js
+var lineItemCount = 5;
+for (var i = 0; i < lineItemCount; i++) {
+	console.log(i);
+	if (i == 1)
+		break;
+}
+
+// Prints 0 1
+```
+
+```js
+var lineItemCount = 5;
+for (var i = 0; i < lineItemCount; i++) {
+	if (i == 1)
+		continue;   // This skips 1
+	console.log(i);
+}
+
+// Prints 0 2 3 4
+```
+
+* for in syntax:
+
+```js
+var lineItem = {
+	product: "Widget 1",
+	quantity: 4,
+	price: 9.50
+};
+
+for (var field in lineItem)
+	console.log(field + " : " + lineItem[field]);
+
+// product : Widget 1
+// quantity : 4
+// price : 9.50
 ```
