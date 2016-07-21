@@ -1,5 +1,3 @@
-# Notes
-
 ### JavaScript in web pages
 
 * The preferred place for the `<script>` tag is the very end of the body tag, so the page can be loaded while the js script is parsed and executed.
@@ -20,14 +18,12 @@
 
 * The code below is a JS bug that triggers the error `unexpected end of file`. This might work on some browsers but is not recommended:
 
-```js <script src="js/app.js" /> ```
+```js 
+<script src="js/app.js" />
+```
 
 * JS scripts included using the `src` attribute are processed in order.
 
 * The `defer` attribute is used to postpone the script to the end, once the others are already executed (and change order of execution).
 
 * The `<noscript>` tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support script.
-
-### Variables
-
-
