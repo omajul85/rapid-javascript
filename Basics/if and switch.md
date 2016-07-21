@@ -25,10 +25,10 @@ var orderType = 'business';
 var shipMethod;
 
 switch (orderType) {
-	case ‘business’:
+	case 'business':
 		shipMethod = 'FedEx';
 		break;
-	case 'personal‘:
+	case 'personal':
 		shipMethod = 'UPS Ground';
 		break;
 	default:
