@@ -41,6 +41,4 @@ var activateOrder = function() {
 
 console.log(typeof activateOrder); // function
 activateOrder(); // Order activated.
-```
-
-* 
+``` 
